@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
+import "../../shared/components/darkTheme";
+import { TurnOff } from "../../shared/components/darkTheme";
 
 export const Refletores = () => {
   const history = useNavigate();
@@ -14,6 +16,7 @@ export const Refletores = () => {
       <Button variant="contained" onClick={homeButton}>
         Home
       </Button>
+      <TurnOff />
     </div>
   );
 };
