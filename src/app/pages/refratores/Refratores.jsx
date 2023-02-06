@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
-import { DarkMode } from "../../shared/themes/darkTheme";
 import { Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
@@ -26,7 +25,6 @@ export const Refratores = () => {
 
   return (
     <div>
-      <DarkMode />
       <h1>Refratores</h1>
       <Button variant="contained" onClick={homeButton}>
         Home

@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
-import { DarkMode } from "../../shared/themes/darkTheme";
+import { useAppThemeContext } from "../../shared/contexts/ThemeContext";
 
 export const Dashboard = () => {
+  const { toggleTheme } = useAppThemeContext();
+
   const history = useNavigate();
 
   function loginButton() {
@@ -20,7 +22,9 @@ export const Dashboard = () => {
 
   return (
     <div>
-      <DarkMode />
+      <Button variant="contained" onClick={toggleTheme}>
+        Mudar Tema
+      </Button>
       <h1>Página Principal</h1>
       <Button variant="contained" onClick={loginButton}>
         Login

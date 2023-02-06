@@ -1,5 +1,10 @@
 import { Routes } from "./routes";
+import { AppThemeProvider } from "./shared/contexts/ThemeContext";
 
 export const App = () => {
-  return <Routes />;
+  return (
+    <AppThemeProvider>
+      <Routes />
+    </AppThemeProvider>
+  );
 };
