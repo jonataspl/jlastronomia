@@ -24,7 +24,7 @@ export const Refratores = () => {
         Home
       </Button>
 
-      <section>
+      <section className="flex">
         <ItemBox />
         <ItemBox />
         <ItemBox />

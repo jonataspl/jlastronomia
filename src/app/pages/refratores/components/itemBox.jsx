@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export const ItemBox = () => {
   return (
-    <Grid container spacing={{ md: 0 }} columns={{ md: 12 }}>
+    <Grid>
       <Grid>
         <Item>
           <img
