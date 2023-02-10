@@ -2,3 +2,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.cabeca {
+  text-align: center;
+}
+.cabeca toggle {
+  text-align: right;
+}

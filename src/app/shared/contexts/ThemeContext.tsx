@@ -40,8 +40,7 @@ export const AppThemeProvider: React.FC<{ children: React.ReactNode }> = ({
     <ThemeContext.Provider value={{ themeName, toggleTheme }}>
       <ThemeProvider theme={theme}>
         <Box
-          width="100vw"
-          height="100vh"
+          sx={{ width: "100vw", height: "100%" }}
           bgcolor={theme.palette.background.default}
         >
           {children}

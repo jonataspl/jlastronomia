@@ -9,28 +9,29 @@ const Item = styled(Paper)(({ theme }) => ({
   border: "1px solid white",
   textAlign: "center",
   color: theme.palette.text.secondary,
-  width: "fixed",
 }));
 
 export const ItemBox = () => {
   return (
     <Grid>
-      <Grid>
-        <Item>
-          <img
-            src="https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg"
-            alt="flex"
-            width={"300px"}
-            height={"300px"}
-          />
-          <h3>Produtos</h3>
-          <p>Descrição</p>
-          <p>Valor</p>
-          <Button variant="contained" sx={{ width: "100%", height: "100%" }}>
-            Adicionar
-          </Button>
-        </Item>
-      </Grid>
+      <Item>
+        <img
+          src="https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg"
+          alt="flex"
+          width={"300px"}
+          height={"300px"}
+        />
+        <h3 className="Product">Product</h3>
+        <p className="Description">Description</p>
+        <p className="Price">Value</p>
+        <Button
+          variant="contained"
+          sx={{ width: "100%", height: "100%" }}
+          className="AddButton"
+        >
+          Adicionar
+        </Button>
+      </Item>
     </Grid>
   );
 };
