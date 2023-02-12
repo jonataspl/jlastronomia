@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export const ItemBox = () => {
   return (
-    <Grid className="Grade">
+    <Grid className="GradeItem">
       <Item>
         <img
           src="https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg"

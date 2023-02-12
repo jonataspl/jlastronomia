@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 
-.header {
+main {
   text-align: center;
 }
 .header .toggle {
@@ -14,17 +14,21 @@
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  align-content: center;
+  grid-gap: 20px;
 }
 
-.o-footer {
-  grid-area: footer;
+.GradeItem {
+  flex-grow: 1;
+  display: grid;
+  justify-content: space-around;
 }
 
 body {
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "aside main main"
-    "footer footer footer";
+  background: none;
+}
+
+.AddButton {
+  max-width: 100%;
 }

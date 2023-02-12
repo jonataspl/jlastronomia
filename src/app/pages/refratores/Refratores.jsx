@@ -17,7 +17,8 @@ export const Refratores = () => {
 
   return (
     <>
-      <div className="header">
+      <header className="header"></header>
+      <main>
         <Button variant="contained" onClick={toggleTheme} className="toggle">
           Mudar Tema
         </Button>
@@ -25,12 +26,21 @@ export const Refratores = () => {
         <Button variant="contained" onClick={homeButton}>
           Home
         </Button>
-      </div>
-      <Grid className="Grade">
-        <ItemBox />
-        <ItemBox />
-        <ItemBox />
-      </Grid>
+      </main>
+      <body>
+        <Grid className="Grade">
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+          <ItemBox />
+        </Grid>
+      </body>
     </>
   );
 };
