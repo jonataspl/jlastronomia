@@ -3,9 +3,28 @@
   flex-wrap: wrap;
 }
 
-.cabeca {
+.header {
   text-align: center;
 }
-.cabeca toggle {
-  text-align: right;
+.header .toggle {
+  font-size: 23;
+}
+
+.Grade {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.o-footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
 }

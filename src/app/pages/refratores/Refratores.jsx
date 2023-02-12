@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import { useAppThemeContext } from "../../shared/contexts/ThemeContext";
 import { Box } from "@mui/system";
+import { Grid } from "@mui/material";
 
 export const Refratores = () => {
   const history = useNavigate();
@@ -16,7 +17,7 @@ export const Refratores = () => {
 
   return (
     <>
-      <div className="cabeca">
+      <div className="header">
         <Button variant="contained" onClick={toggleTheme} className="toggle">
           Mudar Tema
         </Button>
@@ -25,14 +26,11 @@ export const Refratores = () => {
           Home
         </Button>
       </div>
-      <Box sx={{ flexGrow: 1, display: "flex", flexWrap: "wrap" }}>
+      <Grid className="Grade">
         <ItemBox />
         <ItemBox />
         <ItemBox />
-        <ItemBox />
-        <ItemBox />
-        <ItemBox />
-      </Box>
+      </Grid>
     </>
   );
 };

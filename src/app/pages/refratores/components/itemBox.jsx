@@ -1,7 +1,8 @@
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import { Grid } from "@mui/material";
 import Button from "@mui/material/Button";
+import "../components/styled.css";
+import { Grid } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: (theme.palette.mode = "#848586"),
@@ -13,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export const ItemBox = () => {
   return (
-    <Grid>
+    <Grid className="Grade">
       <Item>
         <img
           src="https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg"
@@ -24,11 +25,7 @@ export const ItemBox = () => {
         <h3 className="Product">Product</h3>
         <p className="Description">Description</p>
         <p className="Price">Value</p>
-        <Button
-          variant="contained"
-          sx={{ width: "100%", height: "100%" }}
-          className="AddButton"
-        >
+        <Button variant="contained" className="AddButton">
           Adicionar
         </Button>
       </Item>

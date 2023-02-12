@@ -6,7 +6,6 @@ body {
   font-family: "Lato", Helvetica, Arial;
   font-size: 15px;
   display: flex;
-  margin: 0;
   min-height: 100vh;
 }
 .models {
@@ -21,6 +20,11 @@ header {
   height: 60px;
   background-color: #399ade;
   display: none;
-  justify-content: flex-end;
+  justify-content: fl;
   align-items: center;
+}
+
+.AddButton {
+  width: 100%;
+  display: inline-block;
 }
