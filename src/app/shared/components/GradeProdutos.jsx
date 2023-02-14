@@ -3,12 +3,12 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import RefratorData from "../../pages/refratores/components/RefratorData";
+import { productsJson } from "../../pages/refratores/components/ProductData";
 
 export const Grade = () => {
   <Box sx={{ width: 500, height: 450, overflowY: "scroll" }}>
     <ImageList variant="masonry" cols={3} gap={8}>
-      {RefratorData.map((item) => (
+      {productsJson.map((item) => (
         <ImageListItem key={item.img}>
           <img
             src={`${item.img}?w=248&fit=crop&auto=format`}

@@ -6,22 +6,12 @@
 main {
   text-align: center;
 }
-.header .toggle {
-  font-size: 23;
-}
-
-.Grade {
-  flex-grow: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  grid-gap: 20px;
-}
 
 .GradeItem {
-  flex-grow: 1;
-  display: grid;
+  display: flex;
   justify-content: space-around;
+  grid-gap: 20px;
+  flex-wrap: wrap;
 }
 
 body {
@@ -31,4 +21,9 @@ body {
 
 .AddButton {
   max-width: 100%;
+}
+
+.Description {
+  width: 300px;
+  align-items: center;
 }
