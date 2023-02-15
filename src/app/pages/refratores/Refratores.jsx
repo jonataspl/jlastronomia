@@ -3,13 +3,9 @@ import { ItemBox } from "./components/itemBox";
 import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import { useAppThemeContext } from "../../shared/contexts/ThemeContext";
-import { Grid } from "@mui/material";
-import { productsJson } from "../refratores/components/ProductData";
 
 export const Refratores = () => {
   const history = useNavigate();
-
-  const produtos = productsJson;
 
   const { toggleTheme } = useAppThemeContext();
 
