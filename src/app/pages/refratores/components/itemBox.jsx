@@ -16,14 +16,17 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export const ItemBox = () => {
-  const [precoSelecionado, setPrecoSelecionado] = useState("null");
+  const [impostoSelecionado, setImpostoSelecionado] = useState("op");
+  const [precoSelecionado, setPrecoSelecionado] = useState("np");
 
   const handlePrecoChange = (event) => {
     const value = event.target.value;
     if (value === "preço0") {
-      setPrecoSelecionado(0);
+      setImpostoSelecionado("preço0");
+      setPrecoSelecionado("preço0");
     } else if (value === "preço1") {
-      setPrecoSelecionado(1);
+      setImpostoSelecionado("preço1");
+      setPrecoSelecionado("preço1");
     }
   };
 
@@ -35,17 +38,17 @@ export const ItemBox = () => {
           <h3 className="Product">{name}</h3>
           <p className="Description">{description}</p>
           <InputLabel>Imposto:</InputLabel>
-          <Select value={precoSelecionado} onChange={handlePrecoChange}>
-            <MenuItem value={"null"}>Selecione</MenuItem>
+          <Select value={impostoSelecionado} onChange={handlePrecoChange}>
+            <MenuItem value={"op"}>Selecione</MenuItem>
             <MenuItem value={"preço0"}>Sem imposto pago.</MenuItem>
             <MenuItem value={"preço1"}>Com imposto pago.</MenuItem>
           </Select>
-          <p className="Price" value={"preço1"}>
-            R${price[0]} sem imposto pago.
-          </p>
-          <p className="Price" value={"preço2"}>
-            R${price[1]} com imposto pago.
-          </p>
+          {precoSelecionado === "preço0" ? (
+            <p className="Price">R${price[0]}</p>
+          ) : (
+            <p className="Price">R${price[1]}</p>
+          )}
+
           <Button variant="contained" className="AddButton">
             Adicionar
           </Button>
