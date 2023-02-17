@@ -16,44 +16,50 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export const ItemBox = () => {
-  const [impostoSelecionado, setImpostoSelecionado] = useState("op");
-  const [precoSelecionado, setPrecoSelecionado] = useState("np");
+  const [productStates, setProductStates] = useState({});
 
-  const handlePrecoChange = (event) => {
+  const handlePrecoChange = (event, index) => {
     const value = event.target.value;
-    if (value === "preço0") {
-      setImpostoSelecionado("preço0");
-      setPrecoSelecionado("preço0");
-    } else if (value === "preço1") {
-      setImpostoSelecionado("preço1");
-      setPrecoSelecionado("preço1");
-    }
+    setProductStates((prevStates) => ({
+      ...prevStates,
+      [index]: {
+        impostoSelecionado: value,
+        precoSelecionado: value,
+      },
+    }));
   };
 
   return (
     <Grid className="GradeItem">
-      {productsJson.map(({ name, img, description, price }, index) => (
-        <Item key={index}>
-          <img src={img} alt="flex" width={"300px"} height={"300px"} />
-          <h3 className="Product">{name}</h3>
-          <p className="Description">{description}</p>
-          <InputLabel>Imposto:</InputLabel>
-          <Select value={impostoSelecionado} onChange={handlePrecoChange}>
-            <MenuItem value={"op"}>Selecione</MenuItem>
-            <MenuItem value={"preço0"}>Sem imposto pago.</MenuItem>
-            <MenuItem value={"preço1"}>Com imposto pago.</MenuItem>
-          </Select>
-          {precoSelecionado === "preço0" ? (
-            <p className="Price">R${price[0]}</p>
-          ) : (
-            <p className="Price">R${price[1]}</p>
-          )}
+      {productsJson.map(({ name, img, description, price }, index) => {
+        const productState = productStates[index] || {};
 
-          <Button variant="contained" className="AddButton">
-            Adicionar
-          </Button>
-        </Item>
-      ))}
+        return (
+          <Item key={index}>
+            <img src={img} alt="flex" width={"300px"} height={"300px"} />
+            <h3 className="Product">{name}</h3>
+            <p className="Description">{description}</p>
+            <InputLabel>Imposto:</InputLabel>
+            <Select
+              value={productState.impostoSelecionado || "op"}
+              onChange={(event) => handlePrecoChange(event, index)}
+            >
+              <MenuItem value={"op"}>Selecione</MenuItem>
+              <MenuItem value={"preço0"}>Sem imposto pago.</MenuItem>
+              <MenuItem value={"preço1"}>Com imposto pago.</MenuItem>
+            </Select>
+            {productState.precoSelecionado === "preço0" ? (
+              <p className="Price">R${price[0]}</p>
+            ) : (
+              <p className="Price">R${price[1]}</p>
+            )}
+
+            <Button variant="contained" className="AddButton">
+              Adicionar
+            </Button>
+          </Item>
+        );
+      })}
     </Grid>
   );
 };
