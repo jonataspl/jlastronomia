@@ -40,18 +40,19 @@ export const ItemBox = () => {
             <h3 className="Product">{name}</h3>
             <p className="Description">{description}</p>
             <InputLabel>Imposto:</InputLabel>
+            <p />
             <Select
               value={productState.impostoSelecionado || "op"}
               onChange={(event) => handlePrecoChange(event, index)}
             >
               <MenuItem value={"op"}>Selecione</MenuItem>
-              <MenuItem value={"preço0"}>Sem imposto pago.</MenuItem>
-              <MenuItem value={"preço1"}>Com imposto pago.</MenuItem>
+              <MenuItem value={"preço0"}>Com imposto pago.</MenuItem>
+              <MenuItem value={"preço1"}>Sem imposto pago.</MenuItem>
             </Select>
             {productState.precoSelecionado === "preço0" ? (
-              <p className="Price">R${price[0]}</p>
+              <p className="Price">R$ {price[1].toFixed(2)} á vista</p>
             ) : (
-              <p className="Price">R${price[1]}</p>
+              <p className="Price">R$ {price[0].toFixed(2)} á vista</p>
             )}
 
             <Button variant="contained" className="AddButton">

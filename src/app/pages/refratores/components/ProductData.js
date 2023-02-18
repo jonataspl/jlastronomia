@@ -3,7 +3,7 @@ export const productsJson = [
     id: 1,
     name: "Sv 550 APO 80mm",
     img: "https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg",
-    price: [4200.0, 6200.0],
+    price: [4200.0, 5600.0],
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
@@ -11,7 +11,7 @@ export const productsJson = [
   {
     id: 2,
     name: "Sv 503 ED 70mm F6 Dubleto",
-    img: "https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg",
+    img: "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
     price: [2800.0, 3640.0],
     sizes: ["Sem Imposto", "Com Imposto"],
     description:

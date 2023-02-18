@@ -4,7 +4,11 @@
 }
 
 main {
+  background-color: rgb(57, 54, 208);
   text-align: center;
+}
+main Button {
+  float: right;
 }
 
 .GradeItem {

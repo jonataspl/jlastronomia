@@ -14,7 +14,7 @@ export const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/pagina-inicial" element={<Dashboard />} />
+        <Route path="/pagina-inicial" element={<Refratores />} />
         <Route path="/autenticacao" element={<Login />} />
         <Route path="/refletores" element={<Refletores />} />
         <Route path="/refratores" element={<Refratores />} />
