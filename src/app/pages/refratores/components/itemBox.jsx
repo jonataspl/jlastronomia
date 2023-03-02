@@ -6,6 +6,7 @@ import Select from "@mui/material/Select";
 import "../components/styled.css";
 import { Grid, InputLabel, MenuItem } from "@mui/material";
 import { productsJson } from "./ProductData";
+import Modal from "./modal";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: (theme.palette.mode = "#848586"),
@@ -16,6 +17,18 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export const ItemBox = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [produtoSelecionado, setProdutoSelecionado] = useState(null);
+
+  const handleShowModal = (product) => {
+    setProdutoSelecionado(product);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   const [productStates, setProductStates] = useState({});
 
   const handlePrecoChange = (event, index) => {
@@ -31,12 +44,18 @@ export const ItemBox = () => {
 
   return (
     <Grid className="GradeItem">
-      {productsJson.map(({ name, img, description, price }, index) => {
+      {productsJson.map(({ name, img, description, price }, index, product) => {
         const productState = productStates[index] || {};
 
         return (
           <Item key={index}>
-            <img src={img} alt="flex" width={"300px"} height={"300px"} />
+            <img
+              onClick={handleShowModal}
+              src={img}
+              alt="flex"
+              width={"300px"}
+              height={"300px"}
+            />
             <h3 className="Product">{name}</h3>
             <p className="Description">{description}</p>
             <InputLabel>Imposto:</InputLabel>
@@ -61,6 +80,13 @@ export const ItemBox = () => {
           </Item>
         );
       })}
+      {produtoSelecionado && (
+        <Modal
+          showModal={showModal}
+          closeModal={handleCloseModal}
+          selectedProduct={produtoSelecionado}
+        />
+      )}
     </Grid>
   );
 };
