@@ -6,7 +6,6 @@ import Select from "@mui/material/Select";
 import "../components/styled.css";
 import { Grid, InputLabel, MenuItem } from "@mui/material";
 import { productsJson } from "./ProductData";
-import Modal from "./modal";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: (theme.palette.mode = "#848586"),
@@ -16,15 +15,32 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const Modal = ({ showModal, closeModal, children }) => {
+  return (
+    <>
+      {showModal ? (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            {children}
+          </div>
+        </div>
+      ) : null}
+    </>
+  );
+};
+
 export const ItemBox = () => {
   const [showModal, setShowModal] = useState(false);
   const [produtoSelecionado, setProdutoSelecionado] = useState(null);
 
-  const handleShowModal = (product) => {
-    setProdutoSelecionado(product);
+  const handleShowModal = (index) => {
+    const selectedProduct = productsJson[index];
+    setProdutoSelecionado(selectedProduct);
     setShowModal(true);
   };
-
   const handleCloseModal = () => {
     setShowModal(false);
   };
@@ -50,12 +66,13 @@ export const ItemBox = () => {
         return (
           <Item key={index}>
             <img
-              onClick={handleShowModal}
+              onClick={() => handleShowModal(index)}
               src={img}
               alt="flex"
               width={"300px"}
               height={"300px"}
             />
+
             <h3 className="Product">{name}</h3>
             <p className="Description">{description}</p>
             <InputLabel>Imposto:</InputLabel>
@@ -73,19 +90,28 @@ export const ItemBox = () => {
             ) : (
               <p className="Price">R$ {price[0].toFixed(2)} á vista</p>
             )}
-
             <Button variant="contained" className="AddButton">
               Adicionar
             </Button>
           </Item>
         );
       })}
+
       {produtoSelecionado && (
         <Modal
           showModal={showModal}
           closeModal={handleCloseModal}
           selectedProduct={produtoSelecionado}
-        />
+        >
+          <img
+            src={produtoSelecionado.img}
+            alt="flex"
+            width={"300px"}
+            height={"300px"}
+          />
+          <h3>{produtoSelecionado.name}</h3>
+          <p>{produtoSelecionado.description}</p>
+        </Modal>
       )}
     </Grid>
   );

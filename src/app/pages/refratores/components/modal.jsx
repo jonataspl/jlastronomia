@@ -10,6 +10,7 @@ const Modal = ({ showModal, closeModal, children }) => {
             <span className="close" onClick={closeModal}>
               &times;
             </span>
+            <div></div>
             {children}
           </div>
         </div>
