@@ -110,7 +110,7 @@ export const ItemBox = () => {
             height={"300px"}
           />
           <h3>{produtoSelecionado.name}</h3>
-          <p>{produtoSelecionado.description}</p>
+          <p>{produtoSelecionado.descdetail}</p>
         </Modal>
       )}
     </Grid>

@@ -1,12 +1,13 @@
 export const productsJson = [
   {
     id: 1,
-    name: "Sv 550 APO 80mm",
+    name: "Sv 550 APO 80mm Tripleto",
     img: "https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg",
     price: [4200.0, 5600.0],
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
-      "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+      "Apocromatico com boa correção de cores, um design bonito e atual",
+    descdetail: "",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+    descdetail: "",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+    descdetail: "",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+    descdetail: "",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+    descdetail: "",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+    descdetail: "",
   },
   {
     id: 7,
@@ -70,6 +76,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+    descdetail: "",
   },
   {
     id: 9,
@@ -79,5 +86,6 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Descrição da Svbony em mais de uma linha muito legal bem interessante",
+    descdetail: "",
   },
 ];
