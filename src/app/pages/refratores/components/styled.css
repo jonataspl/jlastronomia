@@ -5,13 +5,18 @@
 
 main {
   background-color: rgb(54, 82, 208);
-  text-align: center;
   padding-top: 1px;
 }
-main Button {
+
+main .portal {
+  font-size: 48px;
+  padding-bottom: 35px;
+}
+
+/* main Button {
   float: left;
   height: 30px;
-}
+} */
 
 .GradeItem {
   display: flex;
@@ -25,6 +30,10 @@ body {
   background: none;
 }
 
+body .alertaDev {
+  align-items: center;
+}
+
 .AddButton {
   max-width: 100%;
 }
@@ -32,6 +41,10 @@ body {
 .Description {
   width: 300px;
   align-items: center;
+}
+
+.select {
+  margin-bottom: 20px;
 }
 
 .modal {

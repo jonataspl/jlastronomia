@@ -8,7 +8,7 @@ import { Grid, InputLabel, MenuItem } from "@mui/material";
 import { productsJson } from "./ProductData";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: (theme.palette.mode = "#848586"),
+  backgroundColor: (theme.palette.mode = "#fff"),
   padding: theme.spacing(1),
   border: "1px solid white",
   textAlign: "center",
@@ -64,7 +64,7 @@ export const ItemBox = () => {
         const productState = productStates[index] || {};
 
         return (
-          <Item key={index}>
+          <Item key={index} sx={{ padding: "2rem" }}>
             <img
               onClick={() => handleShowModal(index)}
               src={img}
@@ -75,9 +75,14 @@ export const ItemBox = () => {
 
             <h3 className="Product">{name}</h3>
             <p className="Description">{description}</p>
-            <InputLabel>Imposto:</InputLabel>
+            {productState.precoSelecionado === "preço0" ? (
+              <p className="Price">R$ {price[1].toFixed(2)} á vista</p>
+            ) : (
+              <p className="Price">R$ {price[0].toFixed(2)} á vista</p>
+            )}
             <p />
             <Select
+              className="select"
               value={productState.impostoSelecionado || "op"}
               onChange={(event) => handlePrecoChange(event, index)}
             >
@@ -85,11 +90,7 @@ export const ItemBox = () => {
               <MenuItem value={"preço0"}>Com imposto pago.</MenuItem>
               <MenuItem value={"preço1"}>Sem imposto pago.</MenuItem>
             </Select>
-            {productState.precoSelecionado === "preço0" ? (
-              <p className="Price">R$ {price[1].toFixed(2)} á vista</p>
-            ) : (
-              <p className="Price">R$ {price[0].toFixed(2)} á vista</p>
-            )}
+
             <Button variant="contained" className="AddButton">
               Adicionar
             </Button>

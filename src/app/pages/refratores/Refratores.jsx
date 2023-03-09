@@ -19,14 +19,13 @@ export const Refratores = () => {
         {/* <Button variant="contained" onClick={toggleTheme} className="toggle">
           Mudar Tema
         </Button> */}
-        <h1>Nome da Loja</h1>
-        <h2 className="text">Produtos Catalogados</h2>
+        <h1 className="portal">JL Astronomia</h1>
         {/* <Button variant="contained" onClick={homeButton}>
           Home
         </Button> */}
       </main>
       <body>
-        <p>Site em desenvolvimento</p>
+        <p className="alertaDev">Site em desenvolvimento</p>
         <ItemBox />
       </body>
     </>
