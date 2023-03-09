@@ -11,6 +11,7 @@ main {
 main .portal {
   font-size: 48px;
   padding-bottom: 35px;
+  padding-left: 10px;
 }
 
 /* main Button {
