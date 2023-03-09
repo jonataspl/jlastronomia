@@ -60,7 +60,7 @@ export const ItemBox = () => {
 
   return (
     <Grid className="GradeItem">
-      {productsJson.map(({ name, img, description, price }, index, product) => {
+      {productsJson.map(({ name, img, description, price }, index) => {
         const productState = productStates[index] || {};
 
         return (
@@ -83,10 +83,9 @@ export const ItemBox = () => {
             <p />
             <Select
               className="select"
-              value={productState.impostoSelecionado || "op"}
+              value={productState.impostoSelecionado || "preço1"}
               onChange={(event) => handlePrecoChange(event, index)}
             >
-              <MenuItem value={"op"}>Selecione</MenuItem>
               <MenuItem value={"preço0"}>Com imposto pago.</MenuItem>
               <MenuItem value={"preço1"}>Sem imposto pago.</MenuItem>
             </Select>
