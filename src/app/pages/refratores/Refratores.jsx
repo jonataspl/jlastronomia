@@ -28,28 +28,28 @@ export const Refratores = () => {
         </Button> */}
       </main>
       <body>
-        <div role="presentation" className="Breadcrumbs">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link underline="hover" color="inherit" href="/">
-              Como funciona
-            </Link>
-            <Link
-              underline="hover"
-              color="inherit"
-              href="/material-ui/getting-started/installation/"
-            >
-              Página inicial
-            </Link>
-            <Link
-              underline="hover"
-              color="text.primary"
-              href="/material-ui/react-breadcrumbs/"
-              aria-current="page"
-            >
-              Formas de pagamento
-            </Link>
-          </Breadcrumbs>
-        </div>
+        <nav className="Breadcrumbs">
+          <Link underline="hover" color="inherit" href="/">
+            Como funciona
+          </Link>
+          &nbsp;/&nbsp;
+          <Link
+            underline="hover"
+            color="inherit"
+            href="/material-ui/getting-started/installation/"
+          >
+            Página inicial
+          </Link>
+          &nbsp;/&nbsp;
+          <Link
+            underline="hover"
+            color="text.primary"
+            href="/material-ui/react-breadcrumbs/"
+            aria-current="page"
+          >
+            Formas de pagamento
+          </Link>
+        </nav>
         <p className="alertaDev">Site em desenvolvimento</p>
         <ItemBox />
       </body>
