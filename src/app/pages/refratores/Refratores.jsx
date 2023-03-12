@@ -23,43 +23,46 @@ export const Refratores = () => {
         {/* <Button variant="contained" onClick={toggleTheme} className="toggle">
           Mudar Tema
         </Button> */}
-        <h1 className="portal">JL Astronomia</h1>
+        <div
+          className="cabecalho"
+          style={{ display: "flex", justifyContent: "space-between" }}
+        >
+          <h1 className="portal">JL Astronomia</h1>
 
+          <IconButton className="CarrinhoIco">
+            <AddShoppingCartIcon />
+          </IconButton>
+        </div>
         {/* <Button variant="contained" onClick={homeButton}>
           Home
         </Button> */}
       </main>
       <aside>
-        <nav className="Breadcrumbs">
-          <Link underline="hover" color="inherit" href="/">
-            Como funciona
-          </Link>
-          &nbsp;/&nbsp;
-          <Link
-            underline="hover"
-            color="inherit"
-            href="/material-ui/getting-started/installation/"
-          >
-            Página inicial
-          </Link>
-          &nbsp;/&nbsp;
-          <Link
-            underline="hover"
-            color="text.primary"
-            href="/material-ui/react-breadcrumbs/"
-            aria-current="page"
-          >
-            Formas de pagamento
-          </Link>
-        </nav>
-        <span
-          className="CarrinhoIco"
-          style={{ display: "flex", justifyContent: "flex-end" }}
-        >
-          <IconButton>
-            <AddShoppingCartIcon />
-          </IconButton>
-        </span>
+        <div className="teste">
+          <nav className="Breadcrumbs">
+            <Link underline="hover" color="inherit" href="/">
+              Como funciona
+            </Link>
+            &nbsp;/&nbsp;
+            <Link
+              underline="hover"
+              color="inherit"
+              href="/material-ui/getting-started/installation/"
+            >
+              Página inicial
+            </Link>
+            &nbsp;/&nbsp;
+            <Link
+              underline="hover"
+              color="text.primary"
+              href="/material-ui/react-breadcrumbs/"
+              aria-current="page"
+            >
+              Formas de pagamento
+            </Link>
+          </nav>
+        </div>
+
         <p className="alertaDev">Site em desenvolvimento</p>
         <ItemBox />
       </aside>

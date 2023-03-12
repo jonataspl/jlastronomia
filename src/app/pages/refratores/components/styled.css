@@ -3,9 +3,13 @@
   flex-wrap: wrap;
 }
 
+aside .teste {
+  background-color: #bbbbbb;
+}
 aside .Breadcrumbs {
   display: flex;
   justify-content: center;
+  margin: 10px 0px 10px 0px;
 }
 
 aside {
@@ -31,9 +35,8 @@ main .portal {
   margin-bottom: 10px;
 }
 
-body nav .CarrinhoIco {
-  display: flex;
-  justify-content: flex-end;
+main .CarrinhoIco {
+  display: block;
 }
 
 /* main Button {
