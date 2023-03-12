@@ -30,22 +30,13 @@ export const Refratores = () => {
       <body>
         <div role="presentation" className="Breadcrumbs">
           <Breadcrumbs aria-label="breadcrumb">
-            <Link underline="hover" color="inherit" href="/">
+            <Link underline="hover" color="text.primary" href="/">
               Como funciona
             </Link>
-            <Link
-              underline="hover"
-              color="inherit"
-              href="/material-ui/getting-started/installation/"
-            >
+            <Link underline="hover" color="text.primary" href="/">
               Página inicial
             </Link>
-            <Link
-              underline="hover"
-              color="text.primary"
-              href="/material-ui/react-breadcrumbs/"
-              aria-current="page"
-            >
+            <Link underline="hover" color="text.primary" href="/">
               Formas de pagamento
             </Link>
           </Breadcrumbs>
