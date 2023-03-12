@@ -3,17 +3,18 @@
   flex-wrap: wrap;
 }
 
-body .Breadcrumbs {
+aside .Breadcrumbs {
   display: flex;
   justify-content: center;
 }
 
-body {
+aside {
   display: grid;
   background: none;
+  /* max-width: 98%; */
 }
 
-body .alertaDev {
+aside .alertaDev {
   display: flex;
   justify-content: center;
 }
@@ -28,6 +29,11 @@ main .portal {
   font-size: 48px;
   padding-left: 10px;
   margin-bottom: 10px;
+}
+
+body nav .CarrinhoIco {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* main Button {

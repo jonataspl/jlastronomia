@@ -1,27 +1,16 @@
 * {
-  box-sizing: border-box;
 }
 body {
   background-color: rgb(54, 82, 208);
   font-family: "Lato", Helvetica, Arial;
-  font-size: 15px;
   display: flex;
-  min-height: 100vh;
-}
-.models {
-  display: none;
 }
 
-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 60px;
-  background-color: #399ade;
-  display: none;
-  justify-content: fl;
-  align-items: center;
+div .MuiBox-root.css-z2t1k2 {
+  width: 100%;
+}
+.models {
+  display: flex;
 }
 
 .AddButton {
