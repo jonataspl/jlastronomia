@@ -29,22 +29,6 @@ export const Refratores = () => {
           Home
         </Button> */}
       </main>
-<<<<<<< Updated upstream
-      <body>
-        <div role="presentation" className="Breadcrumbs">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link underline="hover" color="text.primary" href="/">
-              Como funciona
-            </Link>
-            <Link underline="hover" color="text.primary" href="/">
-              Página inicial
-            </Link>
-            <Link underline="hover" color="text.primary" href="/">
-              Formas de pagamento
-            </Link>
-          </Breadcrumbs>
-        </div>
-=======
       <aside>
         <nav className="Breadcrumbs">
           <Link underline="hover" color="inherit" href="/">
@@ -76,7 +60,6 @@ export const Refratores = () => {
             <AddShoppingCartIcon />
           </IconButton>
         </span>
->>>>>>> Stashed changes
         <p className="alertaDev">Site em desenvolvimento</p>
         <ItemBox />
       </aside>
