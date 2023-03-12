@@ -4,7 +4,7 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import Select from "@mui/material/Select";
 import "../components/styled.css";
-import { Grid, InputLabel, MenuItem } from "@mui/material";
+import { Grid, MenuItem } from "@mui/material";
 import { productsJson } from "./ProductData";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -64,13 +64,14 @@ export const ItemBox = () => {
         const productState = productStates[index] || {};
 
         return (
-          <Item key={index} sx={{ padding: "2rem" }}>
+          <Item className="Item" key={index} sx={{ padding: "2rem" }}>
             <img
               onClick={() => handleShowModal(index)}
               src={img}
               alt="flex"
               width={"300px"}
               height={"300px"}
+              style={{ cursor: "pointer" }}
             />
 
             <h3 className="Product">{name}</h3>

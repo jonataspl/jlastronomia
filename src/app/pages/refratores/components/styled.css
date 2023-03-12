@@ -3,15 +3,31 @@
   flex-wrap: wrap;
 }
 
+body .Breadcrumbs {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: grid;
+  background: none;
+}
+
+body .alertaDev {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   background-color: rgb(54, 82, 208);
   padding-top: 1px;
+  padding-bottom: 25px;
 }
 
 main .portal {
   font-size: 48px;
-  padding-bottom: 35px;
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* main Button {
@@ -24,15 +40,6 @@ main .portal {
   justify-content: space-around;
   grid-gap: 20px;
   flex-wrap: wrap;
-}
-
-body {
-  display: grid;
-  background: none;
-}
-
-body .alertaDev {
-  align-items: center;
 }
 
 .AddButton {
