@@ -7,9 +7,12 @@ import { useAppThemeContext } from "../../shared/contexts/ThemeContext";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import IconButton from "@mui/material/IconButton";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { SettingsPowerRounded } from "@mui/icons-material";
 
 export const Refratores = () => {
   const history = useNavigate();
+
+  const handleDrawerOpen = () => {};
 
   const { toggleTheme } = useAppThemeContext();
 
@@ -25,7 +28,11 @@ export const Refratores = () => {
         </Button> */}
         <div
           className="cabecalho"
-          style={{ display: "flex", justifyContent: "space-between" }}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
         >
           <h1 className="portal">JL Astronomia</h1>
 
@@ -44,18 +51,14 @@ export const Refratores = () => {
               Como funciona
             </Link>
             &nbsp;/&nbsp;
-            <Link
-              underline="hover"
-              color="inherit"
-              href="/material-ui/getting-started/installation/"
-            >
+            <Link underline="hover" color="inherit" href="/">
               Página inicial
             </Link>
             &nbsp;/&nbsp;
             <Link
               underline="hover"
               color="text.primary"
-              href="/material-ui/react-breadcrumbs/"
+              href="/"
               aria-current="page"
             >
               Formas de pagamento

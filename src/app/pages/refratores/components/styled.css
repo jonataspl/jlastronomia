@@ -4,7 +4,7 @@
 }
 
 aside .teste {
-  background-color: #bbbbbb;
+  background-color: #dfdede93;
 }
 aside .Breadcrumbs {
   display: flex;
@@ -36,7 +36,13 @@ main .portal {
 }
 
 main .CarrinhoIco {
-  display: block;
+  display: flex;
+
+  height: 32px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
 }
 
 /* main Button {
