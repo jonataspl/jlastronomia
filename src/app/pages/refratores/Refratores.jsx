@@ -51,8 +51,12 @@ export const Refratores = () => {
               Como funciona
             </Link>
             &nbsp;/&nbsp;
-            <Link underline="hover" color="inherit" href="/">
-              Página inicial
+            <Link
+              underline="hover"
+              color="inherit"
+              href="https://wa.me/5531975141093?text=Ol%C3%A1%2C+gostaria+de+fazer+um+pedido..."
+            >
+              Faça seu pedido clicando aqui!
             </Link>
             &nbsp;/&nbsp;
             <Link

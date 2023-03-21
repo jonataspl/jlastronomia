@@ -67,7 +67,7 @@ export const ItemBox = () => {
           <Item className="Item" key={index} sx={{ padding: "2rem" }}>
             <img
               onClick={() => handleShowModal(index)}
-              src={img}
+              src={img[0]}
               alt="flex"
               width={"300px"}
               height={"300px"}
@@ -105,7 +105,7 @@ export const ItemBox = () => {
           selectedProduct={produtoSelecionado}
         >
           <img
-            src={produtoSelecionado.img}
+            src={produtoSelecionado.img[0]}
             alt="flex"
             width={"300px"}
             height={"300px"}
