@@ -27,28 +27,59 @@ export const productsJson = [
   },
   {
     id: 3,
-    name: "Guider SvBony 60mm F4",
+    name: "Sv 503 ED 70mm F6 Dubleto",
     img: [
-      "https://www.svbony.com/Assets/ProductImages/20190306/a3c2fc625a284b3486853dd426b1139eF9177B-%20_1_.jpg",
+      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
     ],
-    price: [449.99, 584.99],
+    price: [2800.0, 3800.0],
     sizes: ["Sem Imposto", "Com Imposto"],
-    description: "Guider scope acromatica com focalizador helicoidal.",
-    descdetail: "Guider scope acromatica com focalizador helicoidal.",
+    description:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    descdetail:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
   },
   {
     id: 4,
-    name: "Guider SvBony 50mm F4",
+    name: "Sv 503 ED 120mm F7 Dubleto com Flattener",
     img: [
-      "https://www.svbony.com/Assets/ProductImages/20190306/c9a25c0b7f024880970c1ec47fab0dd6F9177A-%20_2_.jpg",
+      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
     ],
-    price: [349.99, 455.0],
+    price: [4200.0, 5450.0],
     sizes: ["Sem Imposto", "Com Imposto"],
-    description: "Guider scope acromatica com focalizador helicoidal.",
-    descdetail: "Guider scope acromatica com focalizador helicoidal.",
+    description:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    descdetail:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
   },
   {
     id: 5,
+    name: "Sv48p Acromatico 90mm F5.5 Dubleto",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
+    ],
+    price: [1700.0, 2400.0],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    descdetail:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
+  },
+  {
+    id: 6,
+    name: "MK105 Maksutov-Cassegrain 105mm F13",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
+    ],
+    price: [1800.0, 2400.0],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    descdetail:
+      "Dupleto ED com boa correção de cores, um design bonito e atual",
+  },
+
+  {
+    id: 9,
     name: "Sv 405 CC OSC Cooled Camera",
     img: [
       "https://www.svbony.com/Assets/ProductImages/F/f9198f/F9369A-SV405C--9.jpg",
@@ -59,18 +90,7 @@ export const productsJson = [
     descdetail: "Camera refrigerada com o sensor IMX294.",
   },
   {
-    id: 6,
-    name: "SV 305 Pro Planetary Camera",
-    img: [
-      "https://www.svbony.com/Assets/ProductImages/F/f9198/F9198C-8---1-.jpg",
-    ],
-    price: [990.9, 1287.0],
-    sizes: ["Sem Imposto", "Com Imposto"],
-    description: "Camera planetaria com sensor IMX290 e USB 3.0.",
-    descdetail: "Camera planetaria com sensor IMX290 e USB 3.0.",
-  },
-  {
-    id: 7,
+    id: 10,
     name: "Sv 605 CC OSC Cooled Camera",
     img: [
       "https://www.svbony.com/Assets/ProductImages/F/f9198k/F9198K-SV605CC--7-.jpg",
@@ -81,7 +101,18 @@ export const productsJson = [
     descdetail: "Camera refrigerada com o sensor IMX533.",
   },
   {
-    id: 8,
+    id: 11,
+    name: "SV 305 Pro Planetary Camera",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/F/f9198/F9198C-8---1-.jpg",
+    ],
+    price: [990.9, 1287.0],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description: "Camera planetaria com sensor IMX290 e USB 3.0.",
+    descdetail: "Camera planetaria com sensor IMX290 e USB 3.0.",
+  },
+  {
+    id: 12,
     name: "SV 305 Planetary Camera",
     img: [
       "https://www.svbony.com/Assets/ProductImages/F/f9198a/F9198A-10--1--1-.jpg",
@@ -92,7 +123,7 @@ export const productsJson = [
     descdetail: "Camera planetaria com sensor IMX290.",
   },
   {
-    id: 9,
+    id: 13,
     name: "Guider SvBony 30mm F4",
     img: [
       "https://www.svbony.com/Assets/ProductImages/W/w9125a/618IRyFdUTL.-AC-SL1200-.jpg",
@@ -101,5 +132,27 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description: "Guider scope acromatica para setups portateis.",
     descdetail: "Guider scope acromatica para setups portateis.",
+  },
+  {
+    id: 14,
+    name: "Guider SvBony 60mm F4",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/20190306/a3c2fc625a284b3486853dd426b1139eF9177B-%20_1_.jpg",
+    ],
+    price: [449.99, 584.99],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description: "Guider scope acromatica com focalizador helicoidal.",
+    descdetail: "Guider scope acromatica com focalizador helicoidal.",
+  },
+  {
+    id: 15,
+    name: "Guider SvBony 50mm F4",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/20190306/c9a25c0b7f024880970c1ec47fab0dd6F9177A-%20_2_.jpg",
+    ],
+    price: [349.99, 455.0],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description: "Guider scope acromatica com focalizador helicoidal.",
+    descdetail: "Guider scope acromatica com focalizador helicoidal.",
   },
 ];
