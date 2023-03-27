@@ -111,7 +111,9 @@ export const ItemBox = () => {
             height={"300px"}
           />
           <h3>{produtoSelecionado.name}</h3>
-          <p>{produtoSelecionado.descdetail}</p>
+          <p style={{ whiteSpace: "pre-wrap" }}>
+            {produtoSelecionado.descdetail}
+          </p>
         </Modal>
       )}
     </Grid>

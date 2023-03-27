@@ -9,8 +9,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Apocromatico com boa correção de cores, um design bonito e atual",
-    descdetail:
-      "Apocromatico com boa correção de cores, um design bonito e atual",
+    descdetail: `Apocromático tripleto com boa correção de cores, um design bonito e atual.\n\n Abertura: 80mm\n Distância focal: 480mm\n Relação focal: F/6\n Vidro ED: S-FPL51\n Coating: Super Multi Coating\n Focalizador 2” dupla velocidade Rack n Pinion`,
   },
   {
     id: 2,
@@ -22,8 +21,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Dupleto ED com boa correção de cores, um design bonito e atual",
-    descdetail:
-      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    descdetail: `Dubleto ED com boa correção de cores, um design bonito e atual.\n\n Abertura: 80mm\n Distância focal: 560mm\n Relação focal: F/7\n Vidro ED: S-FPL51\n Coating: Ultra-wideband Coating(SMC)\n Focalizador 2” dupla velocidade Rack n Pinion\n Acompanha redutor para 1.25”`,
   },
   {
     id: 3,
@@ -35,8 +33,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Dupleto ED com boa correção de cores, um design bonito e atual",
-    descdetail:
-      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    descdetail: `Dubleto ED com boa correção de cores, um design bonito e atual.\n\n Abertura: 70mm\n Distância focal: 420mm\n Relação focal: F/6\n Vidro ED: S-FPL51\n Coating: Ultra-wideband Coating(SMC)\n Focalizador 2” dupla velocidade Rack n Pinion\n Acompanha redutor para 1.25”`,
   },
   {
     id: 4,
@@ -48,8 +45,7 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
       "Dupleto ED com boa correção de cores, um design bonito e atual",
-    descdetail:
-      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    descdetail: `Dubleto ED com boa correção de cores, um design bonito e atual.\n\n Abertura: 102mm\n Distância focal: 714mm\n Relação focal: F/7\n Vidro ED: S-FPL51\n Coating: Ultra-wideband Coating(SMC)\n Focalizador 2” dupla velocidade Rack n Pinion\n Acompanha redutor para 1.25”`,
   },
   {
     id: 5,
@@ -60,9 +56,8 @@ export const productsJson = [
     price: [1700.0, 2400.0],
     sizes: ["Sem Imposto", "Com Imposto"],
     description:
-      "Dupleto ED com boa correção de cores, um design bonito e atual",
-    descdetail:
-      "Dupleto ED com boa correção de cores, um design bonito e atual",
+      "Acromatico excelente para quem está começando, um design bonito e atual",
+    descdetail: `Acromatico excelente para quem está começando com astrofotografia e procura um Custo x Beneficio\n\n Abertura: 90mm\n Distância focal: 500mm\n Relação focal: F/5.5\n Vidro: Dupleto acromatico\n Coating: Fully multi coating(FMC)\n Focalizador 2” dupla velocidade Rack n Pinion\n Acompanha redutor para 1.25”`,
   },
   {
     id: 6,
@@ -72,10 +67,8 @@ export const productsJson = [
     ],
     price: [1800.0, 2400.0],
     sizes: ["Sem Imposto", "Com Imposto"],
-    description:
-      "Dupleto ED com boa correção de cores, um design bonito e atual",
-    descdetail:
-      "Dupleto ED com boa correção de cores, um design bonito e atual",
+    description: "Maksutov-Cassegrain robusto de alta qualidade.",
+    descdetail: `Maksutov-Cassegrain excelente para observação planetaria.\n\n Abertura: 105mm\n Distância focal: 13654mm\n Relação focal: F/13\n Espelho primário coating: Multi-coated Precision Aluminum Coating\n Espelho secundario coating: 99% Reflectivity Dielectric Coatings and Multi Coating\n Focalizador 1.25” com ajuste fino\n Acompanha redutor para 1.25”`,
   },
 
   {
@@ -87,7 +80,7 @@ export const productsJson = [
     price: [4200.0, 6000.0],
     sizes: ["Sem Imposto", "Com Imposto"],
     description: "Camera refrigerada com o sensor IMX294.",
-    descdetail: "Camera refrigerada com o sensor IMX294.",
+    descdetail: `Câmera refrigerada com sensor IMX294, refrigera até 30ºc abaixo da temperatura ambiente.\n\n Sensor 4/3" Sony IMX294 CMOS\n Pixel size: 4.63um\n Sensor\n size: 19.2mm x 13mm\n Resolução: 11.7 megapixels 4144x2822\n QE peak: 75%\n Full well: 63ke\n ADC: 14 bits`,
   },
   {
     id: 10,
@@ -98,7 +91,7 @@ export const productsJson = [
     price: [3499.99, 4548.0],
     sizes: ["Sem Imposto", "Com Imposto"],
     description: "Camera refrigerada com o sensor IMX533.",
-    descdetail: "Camera refrigerada com o sensor IMX533.",
+    descdetail: `Câmera refrigerada com sensor IMX533, refrigera até 30ºc abaixo da temperatura ambiente.\n\n Sensor 1" Sony IMX533 CMOS\n Pixel size: 3.76um\n Sensor size: 16mm\n Resolução: 9 megapixels 3008x3008\n QE peak: 0.91\n Full well: 50ke-\n ADC: 14 bits`,
   },
   {
     id: 11,
