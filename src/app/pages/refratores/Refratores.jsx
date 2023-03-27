@@ -47,10 +47,10 @@ export const Refratores = () => {
       <aside>
         <div className="teste">
           <nav className="Breadcrumbs">
-            <Link underline="hover" color="inherit" href="/About">
+            {/* <Link underline="hover" color="inherit" href="/About">
               Como funciona
             </Link>
-            &nbsp;/&nbsp;
+            &nbsp;/&nbsp; */}
             <Link
               underline="hover"
               color="inherit"
@@ -58,7 +58,7 @@ export const Refratores = () => {
             >
               Faça seu pedido clicando aqui!
             </Link>
-            &nbsp;/&nbsp;
+            {/* &nbsp;/&nbsp;
             <Link
               underline="hover"
               color="text.primary"
@@ -66,7 +66,7 @@ export const Refratores = () => {
               aria-current="page"
             >
               Formas de pagamento
-            </Link>
+            </Link> */}
           </nav>
         </div>
 

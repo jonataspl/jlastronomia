@@ -9,6 +9,7 @@ aside .teste {
 aside .Breadcrumbs {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 10px 0px 10px 0px;
 }
 
@@ -63,6 +64,8 @@ main .CarrinhoIco {
 .Description {
   width: 300px;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .select {
@@ -108,4 +111,8 @@ main .CarrinhoIco {
   color: #000;
   padding: 5px;
   cursor: pointer;
+}
+
+.Product {
+  width: 300px;
 }

@@ -16,7 +16,7 @@ export const productsJson = [
     id: 2,
     name: "Sv 503 ED 80mm F7 Dubleto",
     img: [
-      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
+      "https://www.svbony.com/Assets/ProductImages/F/F9359B/F9359B-600---4-.jpg",
     ],
     price: [3500.0, 4500.0],
     sizes: ["Sem Imposto", "Com Imposto"],
@@ -40,9 +40,9 @@ export const productsJson = [
   },
   {
     id: 4,
-    name: "Sv 503 ED 120mm F7 Dubleto com Flattener",
+    name: "Sv 503 ED 102mm F7 Dubleto com Flattener",
     img: [
-      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
+      "https://www.svbony.com/Assets/ProductImages/F/F9359D/F9359D-ED-Refractor.jpg",
     ],
     price: [4200.0, 5450.0],
     sizes: ["Sem Imposto", "Com Imposto"],
@@ -55,7 +55,7 @@ export const productsJson = [
     id: 5,
     name: "Sv48p Acromatico 90mm F5.5 Dubleto",
     img: [
-      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
+      "https://www.svbony.com/Assets/ProductImages/F/f9341a/F9341A--1-.jpg",
     ],
     price: [1700.0, 2400.0],
     sizes: ["Sem Imposto", "Com Imposto"],
@@ -68,7 +68,7 @@ export const productsJson = [
     id: 6,
     name: "MK105 Maksutov-Cassegrain 105mm F13",
     img: [
-      "https://www.svbony.com/Assets/ProductImages/F/F9359A/SV503-70F6-1.jpg",
+      "https://www.svbony.com/Assets/ProductImages/F/f9382a/F9382A---5-.jpg",
     ],
     price: [1800.0, 2400.0],
     sizes: ["Sem Imposto", "Com Imposto"],
@@ -154,5 +154,17 @@ export const productsJson = [
     sizes: ["Sem Imposto", "Com Imposto"],
     description: "Guider scope acromatica com focalizador helicoidal.",
     descdetail: "Guider scope acromatica com focalizador helicoidal.",
+  },
+  {
+    id: 16,
+    name: "Sv220 Filtro Dual-Band 7nm 2'' ",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/W/w9172b/W9172B--5-.jpg",
+    ],
+    price: [850.0, 850.0],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description: "Filtro de banda estreita Ha e Oiii",
+    descdetail:
+      "Filtro de banda estreita contra poluição luminosa, perfeito para nebulosas de emissão.",
   },
 ];
