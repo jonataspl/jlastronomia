@@ -91,9 +91,9 @@ export const ItemBox = () => {
               <MenuItem value={"preço1"}>Com imposto pago.</MenuItem>
             </Select>
 
-            <Button variant="contained" className="AddButton">
+            {/* <Button variant="contained" className="AddButton">
               Adicionar
-            </Button>
+            </Button> */}
           </Item>
         );
       })}
