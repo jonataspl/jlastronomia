@@ -20,6 +20,8 @@ export const Refratores = () => {
     history("/pagina-inicial");
   }
 
+  const handlePopper = () => {};
+
   return (
     <>
       <main>
@@ -36,7 +38,7 @@ export const Refratores = () => {
         >
           <h1 className="portal">JL Astronomia</h1>
 
-          <IconButton className="CarrinhoIco">
+          <IconButton className="CarrinhoIco" href="">
             <AddShoppingCartIcon />
           </IconButton>
         </div>
@@ -47,7 +49,7 @@ export const Refratores = () => {
       <aside>
         <div className="teste">
           <nav className="Breadcrumbs">
-            {/* <Link underline="hover" color="inherit" href="/About">
+            {/* <Link underline="hover" color="inherit" href={""}>
               Como funciona
             </Link>
             &nbsp;/&nbsp; */}
@@ -56,15 +58,10 @@ export const Refratores = () => {
               color="inherit"
               href="https://wa.me/5531995686966?text=Ol%C3%A1%2C+gostaria+de+fazer+um+pedido..."
             >
-              Faça seu pedido clicando aqui!
+              <h3>Faça seu pedido clicando aqui!</h3>
             </Link>
             {/* &nbsp;/&nbsp;
-            <Link
-              underline="hover"
-              color="text.primary"
-              href="/Payments"
-              aria-current="page"
-            >
+             <Link underline="hover" color="text.primary" aria-current="page">
               Formas de pagamento
             </Link> */}
           </nav>

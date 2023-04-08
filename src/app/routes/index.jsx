@@ -10,11 +10,15 @@ import { Refletores } from "../pages/refletores/Refletores";
 import { Refratores } from "../pages/refratores/Refratores";
 import { Cameras } from "../pages/cameras/Cameras";
 import { About } from "../pages/about/About";
+import { ItemBox } from "../pages/refratores/components/itemBox";
+import { Carrinho } from "../pages/cart/Carrinho";
 
 export const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
+        <Route exact path="/" component={ItemBox} />
+        <Route exact path="/carrinho" component={Carrinho} />
         <Route path="/pagina-inicial" element={<Refratores />} />
         <Route path="/autenticacao" element={<Login />} />
         <Route path="/refletores" element={<Refletores />} />
