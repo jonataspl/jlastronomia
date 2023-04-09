@@ -17,7 +17,7 @@ export const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={ItemBox} />
+        <Route exact path="/itembox" component={ItemBox} />
         <Route exact path="/carrinho" component={Carrinho} />
         <Route path="/pagina-inicial" element={<Refratores />} />
         <Route path="/autenticacao" element={<Login />} />
