@@ -1,7 +1,7 @@
 export const productsJson = [
   {
     id: 1,
-    name: "Sv 550 APO 80mm Tripleto",
+    name: "Sv 550 APO 80mm F6 Tripleto",
     img: [
       "https://www.svbony.com/Assets/ProductImages/F/f9381a-/F9381A-SV550-5.jpg",
     ],
@@ -159,5 +159,27 @@ export const productsJson = [
     description: "Filtro de banda estreita Ha e Oiii",
     descdetail:
       "Filtro de banda estreita contra poluição luminosa, perfeito para nebulosas de emissão.",
+  },
+  {
+    id: 17,
+    name: "Ocular Planetária TMB 4mm SWA 58º",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/W/w2488a/H3d1c213f93834420873d5d53487123666.jpg",
+    ],
+    price: [200, 200],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description: "Ocular com campo de 58º",
+    descdetail: `Uma ocular planetária de altissimo desempenho.\n Conta com 5 elementos em 3 grupos.\n Distancia da saída de pupila: 15mm\n Fully multi-coated.\n Barril de 1.25"`,
+  },
+  {
+    id: 18,
+    name: "Ocular Zoom SV215 de 3mm-8mm para observação planetaria ",
+    img: [
+      "https://www.svbony.com/Assets/ProductImages/W/w9166a/W9166A---5-.jpg",
+    ],
+    price: [450, 585.0],
+    sizes: ["Sem Imposto", "Com Imposto"],
+    description: "Ocular zoom com distancia focal ajustavel",
+    descdetail: `Campo de visão de 56º.\n Possui um ajuste agradavel entre 3mm até 8mm. \n Eye Relief de 10mm.\n Parfocal, não precisando ajustar foco ao trocar a distancia focal.\n 6 elementos óticos.`,
   },
 ];
