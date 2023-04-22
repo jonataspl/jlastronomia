@@ -12,6 +12,7 @@ import { Cameras } from "../pages/cameras/Cameras";
 import { About } from "../pages/about/About";
 import { ItemBox } from "../pages/refratores/components/itemBox";
 import { Carrinho } from "../pages/cart/Carrinho";
+import { Spa } from "../pages/spa/Spa";
 
 export const Routes = () => {
   return (
@@ -20,6 +21,7 @@ export const Routes = () => {
         <Route exact path="/itembox" component={ItemBox} />
         <Route exact path="/carrinho" component={Carrinho} />
         <Route path="/pagina-inicial" element={<Refratores />} />
+        <Route path="/spa" element={<Spa />} />
         <Route path="/autenticacao" element={<Login />} />
         <Route path="/refletores" element={<Refletores />} />
         <Route path="/refratores" element={<Refratores />} />
