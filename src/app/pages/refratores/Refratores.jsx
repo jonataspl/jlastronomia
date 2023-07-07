@@ -68,7 +68,7 @@ export const Refratores = () => {
         </div>
 
         <p className="alertaDev">Site em desenvolvimento</p>
-        <h2 className="alertaDev">Catálago</h2>
+        <h2 className="alertaDev">Catálogo</h2>
         <ItemBox />
       </aside>
     </>
